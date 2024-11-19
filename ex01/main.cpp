@@ -1,0 +1,29 @@
+#include "Animal.hpp"
+#include "Cat.hpp"
+#include "Dog.hpp"
+#include "WrongAnimal.hpp"
+#include "WrongCat.hpp"
+#include "Brain.hpp"
+
+int main()
+{
+	// const Animal* j = new Dog();
+	// const Animal* i = new Cat();
+	// delete j;//should not create a leak
+	// delete i;
+
+	Animal *poly[4];
+	poly[0] = new Dog();
+	poly[1] = new Dog();
+	poly[2] = new Cat();
+	poly[3] = new Cat();
+	for (int k = 0; k < 4; k++)
+	{
+		poly[k]->makeSound();
+	}
+	for (int k = 0; k < 4; k++)
+	{
+		delete poly[k];
+	}
+	return 0;
+}
