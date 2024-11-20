@@ -8,14 +8,6 @@ Dog::Dog()
     std::cout << "Dog Default Constructor" << std::endl;
 }
 
-Dog::Dog(std::string Type) : Animal(Type)
-{
-    (void)Type;
-    type = "Dog";
-    brain = new Brain();
-    std::cout << "Dog Type Constructor" << std::endl;
-}
-
 Dog::Dog(const Dog &obj) : Animal(obj)
 {
     type = obj.getType();

@@ -7,6 +7,8 @@ class Brain
 {
 	private:
 		std::string ideas[100];
-	// cholonical form
+	public:
+		Brain();
+		
 };
 #endif

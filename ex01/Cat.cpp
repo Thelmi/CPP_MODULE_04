@@ -7,13 +7,6 @@ Cat::Cat()
     brain = new Brain();
 	std::cout << "Cat Default Constructor" << std::endl;
 }
-Cat::Cat(std::string Type) : Animal(Type)
-{
-    (void)Type;
-    type = "Cat";
-    brain = new Brain();
-	std::cout << "Cat Type Constructor" << std::endl;
-}
 Cat::Cat(const Cat &obj) : Animal(obj)
 {
     type = obj.getType();

@@ -6,13 +6,6 @@ Animal::Animal()
     std::cout << "Animal Default Contructor" << std::endl;
 }
 
-Animal::Animal(std::string Type)
-{
-    (void)Type;
-    type = "Animal";
-    std::cout << "Animal Type Constructor" << std::endl;
-}
-
 Animal::Animal(const Animal &obj)
 {
     type = obj.getType();

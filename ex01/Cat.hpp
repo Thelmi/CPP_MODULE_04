@@ -10,7 +10,6 @@ class Cat: public Animal
 		Brain *brain;
 	public:
 		Cat();
-		Cat(std::string Type);
 		Cat(const Cat &obj);
 		Cat &operator=(const Cat &obj);
 		~Cat();
