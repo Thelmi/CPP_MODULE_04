@@ -13,8 +13,6 @@ class Cat: public Animal
 		Cat(const Cat &obj);
 		Cat &operator=(const Cat &obj);
 		~Cat();
-		void setIdea(int index, const std::string &idea);
-		std::string getIdea(int index) const;
 		void makeSound() const;
 };
 

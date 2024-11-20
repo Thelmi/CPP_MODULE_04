@@ -5,8 +5,9 @@
 
 class Brain
 {
-	public:
+	private:
 		std::string ideas[100];
+	public:
 		Brain();
 		Brain(const Brain &obj);
 		Brain &operator=(const Brain &obj);

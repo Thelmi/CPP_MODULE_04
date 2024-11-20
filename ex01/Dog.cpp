@@ -13,6 +13,8 @@ Dog::Dog(const Dog &obj) : Animal(obj)
 	type = obj.getType();
 	brain = new Brain(*obj.brain);
 	std::cout << "Dog Copy Constructor" << std::endl;
+	std::cout << "old brain           | " << &obj.brain << std::endl;
+	std::cout << "new deep brain copy | " << &this->brain << std::endl;
 }
 
 Dog &Dog::operator=(const Dog &obj)
