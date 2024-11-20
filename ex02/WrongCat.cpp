@@ -6,12 +6,7 @@ WrongCat::WrongCat()
     type = "WrongCat";
 	std::cout << "WrongCat Default Constructor" << std::endl;
 }
-WrongCat::WrongCat(std::string Type) : WrongAnimal(Type)
-{
-    (void)Type;
-    type = "WrongCat";
-	std::cout << "WrongCat Type Constructor" << std::endl;
-}
+
 WrongCat::WrongCat(const WrongCat &obj) : WrongAnimal(obj)
 {
     type = obj.getType();

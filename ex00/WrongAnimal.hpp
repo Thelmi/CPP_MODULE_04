@@ -9,7 +9,6 @@ class WrongAnimal
 		std::string type;
 	public:
 		WrongAnimal();
-		WrongAnimal(std::string Type);
 		WrongAnimal(const WrongAnimal &obj);
 		WrongAnimal &operator=(const WrongAnimal &obj);
 		virtual ~WrongAnimal();

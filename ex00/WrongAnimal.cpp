@@ -6,13 +6,6 @@ WrongAnimal::WrongAnimal()
     std::cout << "WrongAnimal Default Contructor" << std::endl;
 }
 
-WrongAnimal::WrongAnimal(std::string Type)
-{
-    (void)Type;
-    type = "WrongAnimal";
-    std::cout << "WrongAnimal Type Constructor" << std::endl;
-}
-
 WrongAnimal::WrongAnimal(const WrongAnimal &obj)
 {
     type = obj.getType();
@@ -21,7 +14,10 @@ WrongAnimal::WrongAnimal(const WrongAnimal &obj)
 
 WrongAnimal &WrongAnimal::operator=(const WrongAnimal &obj)
 {
-    type = obj.getType();
+    if (this != &obj)
+	{
+		type = obj.getType();
+	}
     std::cout << "WrongAnimal Assignment operator" << std::endl;
     return *this;
 }

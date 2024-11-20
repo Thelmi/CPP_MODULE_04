@@ -6,13 +6,6 @@ WrongAnimal::WrongAnimal()
     std::cout << "WrongAnimal Default Contructor" << std::endl;
 }
 
-WrongAnimal::WrongAnimal(std::string Type)
-{
-    (void)Type;
-    type = "WrongAnimal";
-    std::cout << "WrongAnimal Type Constructor" << std::endl;
-}
-
 WrongAnimal::WrongAnimal(const WrongAnimal &obj)
 {
     type = obj.getType();
